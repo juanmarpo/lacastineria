@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Models</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Contacto</th>
+      <th>Email</th>
+      <th>Identificación</th>
+      <th>Dirección</th>
+      <th>Ciudad</th>
+      <th>Altura</th>
+      <th>Peso</th>
+      <th>Cabello</th>
+      <th>Ojos</th>
+      <th>Labios</th>
+      <th>Nariz</th>
+      <th>Cumpleaños</th>
+      <th>Genero</th>
+      <th>Habilidades</th> 
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @models.each do |model| %>
+      <tr>
+        <td><%= model.name %></td>
+        <td><%= model.contact %></td>
+        <td><%= model.email %></td>
+        <td><%= model.identification %></td>
+        <td><%= model.address %></td>
+        <td><%= model.city %></td>
+        <td><%= model.height %></td>
+        <td><%= model.weight %></td>
+        <td><%= model.hair %></td>
+        <td><%= model.eyes %></td>
+        <td><%= model.lips %></td>
+        <td><%= model.nose %></td>
+        <td><%= model.date_of_birth %></td>
+        <td><%= model.gender %></td>
+        <td><%= model.disciplines %></td>
+        <td><%= link_to 'Ver', model %></td>
+        <td><%= link_to 'Editar', edit_model_path(model) %></td>
+        <td><%= link_to 'Eliminar', model, method: :delete, data: { confirm: 'Estás seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Model', new_model_path %>

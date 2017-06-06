@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Título:</strong>
+  <%= @casting.title %>
+</p>
+
+<p>
+  <strong>Descripción:</strong>
+  <%= @casting.description %>
+</p>
+
+<p>
+  <strong>Tipo de pago:</strong>
+  <%= @casting.payment_type %>
+</p>
+
+<p>
+  <strong>Ubicación:</strong>
+  <%= @casting.ubication %>
+</p>
+
+<p>
+  <strong>Casting termina:</strong>
+  <%= @casting.casting_end %>
+</p>
+
+<%= link_to 'Editar', edit_casting_path(@casting) %> |
+<%= link_to 'Volver', castings_path %>

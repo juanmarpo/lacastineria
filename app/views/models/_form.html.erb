@@ -1,0 +1,79 @@
+<%= form_for(@model) do |f| %>
+  <% if @model.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@model.errors.count, "error") %> prohibited this model from being saved:</h2>
+
+      <ul>
+      <% @model.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br>
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :identification %><br>
+    <%= f.text_field :identification %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div>
+  <%= f.label :city %><br>
+  <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :hair %><br>
+    <%= f.text_field :hair %>
+  </div>
+  <div class="field">
+    <%= f.label :eyes %><br>
+    <%= f.text_field :eyes %>
+  </div>
+  <div class="field">
+    <%= f.label :lips %><br>
+    <%= f.text_field :lips %>
+  </div>
+    </div>
+    </div>
+  <div class="field">
+    <%= f.label :date_of_birth %><br>
+    <%= f.text_field :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :nose %><br>
+    <%= f.text_field :nose %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplines %><br>
+    <%= f.text_field :disciplines %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

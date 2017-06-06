@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @booker.name %>
+</p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @booker.nickname %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @booker.contact %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @booker.email %>
+</p>
+
+<%= link_to 'Edit', edit_booker_path(@booker) %> |
+<%= link_to 'Back', bookers_path %>

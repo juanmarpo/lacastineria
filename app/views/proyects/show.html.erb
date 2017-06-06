@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @proyect.name %>
+</p>
+
+<p>
+  <strong>Tipo de proyecto:</strong>
+  <%= @proyect.proyect_type %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @proyect.director %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @proyect.client %>
+</p>
+
+<p>
+  <strong>Casting Seleccionado:</strong>
+ 
+</p>
+
+<%= link_to 'Edit', edit_proyect_path(@proyect) %> |
+<%= link_to 'Back', proyects_path %>

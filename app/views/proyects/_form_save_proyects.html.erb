@@ -1,0 +1,12 @@
+<%= form_for([@director, @proyect]) do |f| %>
+   <% if @proyect.errors.any? %>
+      <ul>
+         <% @proyect.errors.each do |name, director| %>
+         <li> <%= director %> </li>
+         <% end %>
+      </ul>
+   <% end %>
+   <%= f.text_area :director, {:value => @director} %>
+   <br />
+   <%= f.submit "Enviar" %> <%= link_to "Volver", @director %>
+<% end %>

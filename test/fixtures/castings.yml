@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  payment_type: MyString
+  ubication: MyString
+  casting_end: MyString
+
+two:
+  title: MyString
+  description: MyString
+  payment_type: MyString
+  ubication: MyString
+  casting_end: MyString
